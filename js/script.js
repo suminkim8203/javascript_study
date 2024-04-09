@@ -1,18 +1,12 @@
-let num = 9;
+const scores = [88, 75, 95, 62, 18];
 
-if (num % 2 == 0) {
-  console.log(`${num}은(는) 짝수입니다.`);
-} else {
-  console.log(`${num}은(는) 홀수입니다.`);
+for (let score of scores) {
+  console.log(score);
 }
 
-// 70점 이상이면 합격, 그렇지 않으면 불합격
-let score = 85;
-let result = "";
+const member = { id: "kdhong", username: "홍길동", age: 30 };
 
-if (score >= 70) {
-  result = "합격";
-} else {
-  result = "불합격";
+// 객체의 요소 수 만큼 (해당 예제는 세 번) 반복 루프 진행
+for (let x in member) {
+  console.log(member[x]);
 }
-console.log(result);
