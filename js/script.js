@@ -1,12 +1,19 @@
-const scores = [88, 75, 95, 62, 18];
+// 이중 for 문
+// 구구단
+// 2단
+let x = 2;
+let result;
 
-for (let score of scores) {
-  console.log(score);
+for (let y = 1; y <= 9; y++) {
+  result = x * y;
+  console.log(result);
 }
 
-const member = { id: "kdhong", username: "홍길동", age: 30 };
+let resultAll;
 
-// 객체의 요소 수 만큼 (해당 예제는 세 번) 반복 루프 진행
-for (let x in member) {
-  console.log(member[x]);
+for (let x = 2; x <= 9; x++) {
+  for (let y = 1; y <= 9; y++) {
+    resultAll = x * y;
+    console.log(resultAll);
+  }
 }
