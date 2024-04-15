@@ -55,7 +55,7 @@ let text3 = `이름: ${username}, 나이: ${age}`;
 console.log(text3);
 ```
 
-## 3.4 bloolean
+## 3.4 boolean
 
 ```js
 let x = 5 > 3; // true
